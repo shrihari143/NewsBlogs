@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+      /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Search Form */
+nav form input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-left: 10px;
+}
+
+nav form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+nav form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav ul {
+    margin-top: 10px;
+  }
+  
+  nav form {
+    margin-top: 10px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+/* Header */
+header {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Hero Section */
+#hero {
+  background-color: rgb(247, 242, 243);
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Segments Section */
+/* Segments Section */
+#segments {
+  background-image: url('img/globe-technology-business-with-gradient-wallpaper.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.segment {
+  margin-bottom: 30px;
+}
+
+.segment h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sub-segments {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-segments li {
+  margin-bottom: 5px;
+}
+
+#segments {
+  background-color: #fff;
+  
+  padding: 50px 0;
+}
+
+.segment {
+  margin-bottom: 30px;
+}
+
+.segment h3 {
+  color: #007bff;
+}
+
+.sub-segments {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-segments li {
+  margin-bottom: 5px;
+}
+
+/* News Section */
+#news {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.news-feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.news-item {
+  background-color: #f7eef5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Events Section */
+#events {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.event-item {
+  background-color:#f7eef5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Jobs Section */
+#jobs {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+/* Header */
+header {
+  background-color: #000;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Search Form */
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 5px;
+}
+
+nav form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+nav form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav form {
+    margin-top: 10px;
+  }
+}
+
+.job-item {
+  background-color: #f7eef5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #007bff;
+}
+footer {
+  background-color: black;
+  padding: 20px;
+  color: rgb(174, 105, 105);
+  text-align: center;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  margin-right: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  footer nav ul {
+    flex-wrap: wrap;
+  }
+
+  footer nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #segments .segment {
+    text-align: center;
+  }
+
+  #news .news-feed,
+  #events .event-list,
+  #jobs .job-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <form>
+        <input type="text" id="searchInput" placeholder="Search">
+        <button type="submit" onclick="search()">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>Welcome to Our Blog Website</h1>
+      <p>Discover insightful articles on business, technology, and lifestyle.</p>
+    </div>
+  </section>
+
+  <section id="segments">
+    <div class="container">
+      <h2>Explore Our Blog Segments</h2>
+      <div class="segment">
+        <h3>Business and Finance</h3>
+        <ul class="sub-segments">
+          <li>Entrepreneurship</li>
+          <li>Investment Strategies</li>
+          <li>Personal Finance Tips</li>
+          <li>Startups</li>
+          <li>Marketing and Advertising</li>
+          <li>Economics</li>
+          <li>Business Ethics</li>
+        </ul>
+      </div>
+      <div class="segment">
+        <h3>Technology and Innovation</h3>
+        <ul class="sub-segments">
+          <li>Artificial Intelligence</li>
+          <li>Cybersecurity</li>
+          <li>Software Development</li>
+          <li>Data Science</li>
+          <li>Blockchain</li>
+          <li>Internet of Things</li>
+          <li>Cloud Computing</li>
+        </ul>
+      </div>
+      <div class="segment">
+        <h3>Lifestyle and Wellness</h3>
+        <ul class="sub-segments">
+          <li>Health and Fitness</li>
+          <li>Travel and Adventure</li>
+          <li>Self-Improvement</li>
+          <li>Food and Nutrition</li>
+          <li>Fashion and Beauty</li>
+          <li>Mindfulness and Meditation</li>
+          <li>Relationships</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="news-feed">
+        <div class="news-item">
+          <h3>Breaking News Title</h3>
+          <p>Summary of the breaking news article goes here.</p>
+          <a href="#news-article-link">Read More</a>
+        </div>
+        <div class="news-item">
+          <h3>News Title</h3>
+          <p>Summary of the news article goes here.</p>
+          <a href="#news-article-link">Read More</a>
+        </div>
+        <div class="news-item">
+          <h3>News Title</h3>
+          <p>Summary of the news article goes here.</p>
+          <a href="#news-article-link">Read More</a>
+        </div>
+      </div>
+      <a href="#all-news" class="btn">View All News</a>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-list">
+        <div class="event-item">
+          <h3>Event Title</h3>
+          <p>Date, Time, and Location of the event</p>
+          <a href="#event-details-link">Event Details</a>
+        </div>
+        <div class="event-item">
+          <h3>Event Title</h3>
+          <p>Date, Time, and Location of the event</p>
+          <a href="#event-details-link">Event Details</a>
+        </div>
+        <div class="event-item">
+          <h3>Event Title</h3>
+          <p>Date, Time, and Location of the event</p>
+          <a href="#event-details-link">Event Details</a>
+        </div>
+      </div>
+      <a href="#all-events" class="btn">View All Events</a>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <div class="container">
+      <h2>Job Opportunities</h2>
+      <div class="job-list">
+        <div class="job-item">
+          <h3>Job Title</h3>
+          <p>Company Name | Location | Job Type</p>
+          <a href="#job-details-link">Job Details</a>
+        </div>
+        <div class="job-item">
+          <h3>Job Title</h3>
+          <p>Company Name | Location | Job Type</p>
+          <a href="#job-details-link">Job Details</a>
+        </div>
+        <div class="job-item">
+          <h3>Job Title</h3>
+          <p>Company Name | Location | Job Type</p>
+          <a href="#job-details-link">Job Details</a>
+        </div>
+      </div>
+      <a href="#all-jobs" class="btn">View All Jobs</a>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Use</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <!-- Add your social media icons/links here -->
+    </div>
+    <p>&copy; 2023 Blog Website. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    // JavaScript code for search feature
+    function search() {
+      var input = document.getElementById("searchInput").value;
+      alert("Searching for: " + input);
+      // Add your search logic here
+    }
+
+    // JavaScript code for displaying current date and time
+    function displayDateTime() {
+      var datetime = new Date();
+      var datetimeString = datetime.toLocaleString();
+      document.getElementById("datetime").innerHTML = "Current Date and Time: " + datetimeString;
+    }
+
+    // JavaScript code for displaying a random quote
+    var quotes = [
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+      "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+      "The best way to predict the future is to create it. - Peter Drucker",
+      "Believe you can and you're halfway there. - Theodore Roosevelt"
+    ];
+
+    function displayRandomQuote() {
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").innerHTML = quotes[randomIndex];
+    }
+
+    displayDateTime();
+    displayRandomQuote();
+  </script>
+</body>
+</html>
